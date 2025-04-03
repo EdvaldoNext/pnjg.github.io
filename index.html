@@ -8,7 +8,7 @@
   <script>
     
     var password = prompt("Voce esta prestes a viver uma das maiores experiências da sua vida! Por favor, digite a senha:");
-    if (password != "2000") {
+    if (password != "ci") {
       window.location.href = "paginaDeErro.html"; // Redireciona se a senha estiver errada
     }
     
@@ -77,7 +77,7 @@ label {
 document.getElementById("loginForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Impede o envio padrão do formulário
   var password = document.getElementById("password").value;
-  if (password === "10004") {
+  if (password === "idiota") {
     window.location.href = "um.html"; // Redireciona para a página desejada
   } else {
     document.getElementById("errorMessage").textContent = "Senha incorreta. Tente novamente.";
