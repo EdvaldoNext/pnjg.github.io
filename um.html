@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Pagina</title>
+  <script>             var password = prompt("Voce esta prestes a viver uma das maiores experiências da sua vida! Por favor, digite a senha:");
+    if (password != "aa") { window.location.href = "paginaDeErro.html"; // Redireciona se a senha estiver errada     }               </script>
+  <style>
+    body {
+      background-color: #F0E68C;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    iframe {
+      width: 80%;
+      height: 60vh;
+    }
+
+    h1,
+    h2 {
+      color: #d5006d;
+    }
+
+    .gallery img {
+      width: 90%;
+      /* Largura total em telas pequenas */
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    #contador {
+      color: #d5006d;
+    }
+
+    #ptexto {
+      color: #d5006d;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Greice Janaina Nascimento Prieto </h1>
+  <p>Este site é dedicado a você Anjinho!<br> Meu Primeiro e Ultimo Amor.</>
+  </p>
+  <p id="contador"></p>
+  <summary> <strong>
+      <h2>Nossa História</h2>
+    </strong> </summary>
+  <details>
+    <p id="ptexto" style="text-align: justify;"> No começo, era só amizade, mas essa amizade floresceu em um carinho
+      imenso, um amor que nasceu suavemente. <br><br> Lembra da nossa primeira música juntos? <br><br> "Porque as noites
+      com você são boas, enchendo a cara e falando mal das mesmas pessoas. Talvez você vá embora antes que o sol
+      levante, mas eu vou te amar como um idiota ama." <br><br> Logo estávamos nos conhecendo, e meu coração batia cada
+      vez mais forte. Ver você era o que importava; em meio ao caos que este lugar é, você era a única parte boa daqui.
+      <br><br> As noites ouvindo música se tornaram momentos mágicos, onde percebi o quão especial você era para mim.
+      Você se tornou essencial, e meu coração acelerava a cada instante. <br><br> Hoje, tenho certeza de que você é a
+      única mulher que amei de verdade e a única que amarei. Juntos, vivemos momentos de felicidade, mas também
+      enfrentamos decepções. Errei, te magoei, e ambos nos ferimos, mas sei que você foi a mulher que amei de verdade em
+      toda a minha vida. <br><br> Lembro-me de você mencionar uma vez que eu tinha feito uma dedicatória no Facebook, e
+      eu disse a você que faria um site somente para você, lembra? Pois bem, aqui está. <br><br> Quero que este site
+      seja uma recordação do quanto te amei, do quanto te amo e do quanto te amarei para sempre. Anjinho, eu te amo! ❤️
+    </p>
+  </details> <!--<p>Era uma vez... (adicione sua história aqui!)</p>-->
+  <h2>Nossos Momentos!</h2>
+  <div class="gallery"> <img src="A.jpg" alt="Momento 1"> <img src="B.jpg" alt="Momento 2"> <img src="C.jpg"
+      alt="Momento 3"> <img src="D.jpg" alt="Momento 4"> <img src="E.jpg" alt="Momento 5"> <img src="F.jpg"
+      alt="Momento 6"> </div>
+  <h1> Nossas Musicas </h1> <iframe src="https://www.youtube-nocookie.com/embed/u9A86wyHkw4?si=qRVkfx0LCxetjlIP"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br><br><br><br>
+  <h2>Nunca me esquecerei de você neném</h2>
+  <p>Eu te amo! ❤️</p>
+  <script>         // Data de início do namoro (ano, mês (0-11), dia)         const dataInicio = new Date(2022, 7, 15); // Exemplo: 15 de Janeiro de 2023          function calcularTempoJuntos() {             const hoje = new Date();             const diferenca = hoje - dataInicio;             const diasJuntos = Math.floor(diferenca / (1000 * 60 * 60 * 24));             return diasJuntos;         }          // Atualiza o contador a cada dia         function atualizarContador() {             const dias = calcularTempoJuntos();             document.getElementById('contador').textContent = 'Se nosso laço ainda nos unisse, celebraríamos hoje, ' + dias + ' dias complicidade juntos!';         }          // Executa a função atualizarContador() uma vez para exibir o valor imediatamente         atualizarContador();          // Atualiza o contador a cada 24 horas         setInterval(atualizarContador, 86400000);     </script>
+  <audio src="Idiotaedit.mp3" autoplay loop controls></audio>
+</body>
+
+</html>
