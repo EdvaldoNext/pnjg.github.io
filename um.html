@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Nosso Amor</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina um</title>
 
     <script>
     
@@ -13,15 +13,23 @@
         if (password != "ci") {
           window.location.href = "paginaDeErro.html"; // Redireciona se a senha estiver errada
         }
-       
+      
       </script>
 
     <style>
         body {
-            background-color: #f8e3e3;
+            background-image: url(fundo2.jpg);
             font-family: 'Arial', sans-serif;
             text-align: center;
         }
+        header {
+            padding-top: 20px;
+            box-sizing: border-box;
+            background-color: #f0abcf;
+            border-radius: 30px;
+            padding-bottom: 20px;
+        }
+
         iframe {
             width: 80%;
             height: 60vh;
@@ -29,7 +37,7 @@
         
         
         h1,h2 {
-            color: #d5006d;
+            color: yellow;
         }
         .gallery img {
             width: 90%; /* Largura total em telas pequenas */
@@ -42,12 +50,31 @@
         }
         #ptexto {
             color: #d5006d;
+            text-align: center;
+            justify-content: center;
         }
+        footer {
+            box-sizing: border-box;
+            background-color: #f0abcf;
+            border-radius: 30px;
+
+        }
+        #Musicafooter {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 20px;
+        }
+
+
     </style>
 </head>
 <body>
+    
+    <header>
     <h1>Greice Janaina Nascimento Prieto</h1>
-    <p>Este site é dedicado a você Anjinho!<br>
+    <p style="color: #6F0006;">Este site é dedicado a você Anjinho!<br>
         Meu Primeiro e Ultimo Amor.</> </p>
     <p id="contador"></p>
     
@@ -61,7 +88,7 @@
             <summary>  <strong> <h2>Nossa História</h2> </strong> </summary>
   <details>
                     
-    <p id="ptexto" style="text-align: justify;">
+    <p id="ptexto" style="color: #6F0006;" >
 
 No começo, era só amizade, mas essa amizade floresceu em um carinho imenso, um amor que nasceu suavemente. <br><br>
 
@@ -91,11 +118,13 @@ Quero que este site seja uma recordação do quanto te amei, do quanto te amo e 
           </details>
           
 
-  
+</header>
   
   
     
     <h2>Nossos Momentos!</h2>
+   
+    <br><br>
     <div class="gallery">
         <img src="A.jpg" alt="Momento 1">
         <img src="B.jpg" alt="Momento 2">
@@ -103,19 +132,31 @@ Quero que este site seja uma recordação do quanto te amei, do quanto te amo e 
         <img src="D.jpg" alt="Momento 4">
         <img src="E.jpg" alt="Momento 5">
         <img src="F.jpg" alt="Momento 6">
+        <img src="ursinhos-fofos-coracoes.gif" alt="Momento 7">
+        <img src="ursinho-beijos.gif" alt="Momento 8">
+        <img src="ursinhos-mordendo.gif" alt="Momento 9">
     </div>
     
     
 
         <h1>
-            Nossas Musicas
+            Nossa Musica
         </h1>
 
         <iframe  src="https://www.youtube-nocookie.com/embed/u9A86wyHkw4?si=qRVkfx0LCxetjlIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br><br><br><br>
-        
+     
+    <footer>
+
     <h2>Nunca me esquecerei de você neném</h2>
-    <p>Eu te amo! ❤️</p>
+    <p style="color: #6F0006;">Eu te amo! ❤️</p>
+
+    <dir id="Musicafooter">
+    <audio src="apagapGa.MP3" loop controls controlsList="nodownload" ></audio>
+    <audio src="Idiotaedit.mp3" autoplay loop controls controlsList="nodownload" ></audio>
+    <audio src="apaguei.MP3" loop controls controlsList="nodownload" ></audio>
+    </dir>
+    </footer>
     
     <script>
         // Data de início do namoro (ano, mês (0-11), dia)
@@ -131,7 +172,7 @@ Quero que este site seja uma recordação do quanto te amei, do quanto te amo e 
         // Atualiza o contador a cada dia
         function atualizarContador() {
             const dias = calcularTempoJuntos();
-            document.getElementById('contador').textContent = 'Se nosso laço ainda nos unisse, celebraríamos hoje, ' + dias + ' dias complicidade juntos!';
+            document.getElementById('contador').textContent = 'Se nosso laço ainda nos unisse, celebraríamos hoje, ' + dias + ' dias de complicidade juntos!';
         }
 
         // Executa a função atualizarContador() uma vez para exibir o valor imediatamente
@@ -141,8 +182,9 @@ Quero que este site seja uma recordação do quanto te amei, do quanto te amo e 
         setInterval(atualizarContador, 86400000);
     </script>
   
-          <audio src="Idiotaedit.mp3" autoplay loop controls></audio>
+         
   
+    
     
     
   
